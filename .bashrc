@@ -40,6 +40,8 @@ alias gd='git diff'
 alias gbv='git branch -vv'
 alias gu='git fetch && git merge FETCH_HEAD'
 alias gl='git log'
+alias gri='git rebase -i @{u}'
+alias gr='git rebase @{u}'
 
 ################################################################################
 # Git friendly prompt
