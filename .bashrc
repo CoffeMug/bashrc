@@ -40,8 +40,8 @@ alias gd='git diff'
 alias gbv='git branch -vv'
 alias gu='git fetch && git merge FETCH_HEAD'
 alias gl='git log'
-alias gri='git rebase -i @{u}'
-alias gr='git rebase @{u}'
+alias gri='git rebase -i origin/master'
+alias gr='git rebase origin/master'
 
 ################################################################################
 # Git friendly prompt
@@ -79,4 +79,8 @@ function emacsf() {
 
 function gitc() {
    git checkout "$1"
+}
+
+function work_load() {
+   git log | grep "$1" | wc -l
 }
