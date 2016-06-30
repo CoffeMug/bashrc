@@ -25,24 +25,24 @@ fi
 ################################################################################
 # Aliases general
 ################################################################################
-alias emacs='emacs -nw'
-alias ll='ls -l'
-alias ack='ack --ignore-dir=x86'
-alias eclipse='nohup /home/akhorsandi/eclipse_mars/eclipse/eclipse &'
-alias build_cusfp3='./rpmbuild.pl -init -rev r27a cu4appl && ./rpmbuild.pl cu4appl'
+alias emacs="emacs -nw"
+alias ll="ls -l"
+alias ack="ack --ignore-dir=x86"
+alias eclipse="nohup /home/akhorsandi/eclipse_mars/eclipse/eclipse &"
+alias build_cusfp3="./rpmbuild.pl -init -rev r27a cu4appl && ./rpmbuild.pl cu4appl"
 
 ################################################################################
 # Aliases GIT
 ################################################################################
-alias cdg='cd /usr/local/src/git'
-alias gits='git status'
-alias gd='git diff'
-alias gbv='git branch -vv'
-alias gu='git fetch && git merge FETCH_HEAD'
-alias gl='git log'
-alias gri='git rebase -i origin/master'
-alias gr='git rebase origin/master'
-alias gddlb='git branch -vv | grep gone] | cut -d' ' -f3 | xargs git branch -D'
+alias cdg="cd /usr/local/src/git"
+alias gits="git status"
+alias gd="git diff"
+alias gbv="git branch -vv"
+alias gu="git fetch && git merge FETCH_HEAD"
+alias gl="git log"
+alias gri="git rebase -i origin/master"
+alias gr="git rebase origin/master"
+alias gddlb="git branch -vv | grep gone\] | cut -d' ' -f3 | xargs git branch -D 2>/dev/null"
 
 ################################################################################
 # Git friendly prompt
