@@ -42,6 +42,7 @@ alias gu='git fetch && git merge FETCH_HEAD'
 alias gl='git log'
 alias gri='git rebase -i origin/master'
 alias gr='git rebase origin/master'
+alias gddlb='git branch -vv | grep gone] | cut -d' ' -f3 | xargs git branch -D'
 
 ################################################################################
 # Git friendly prompt
